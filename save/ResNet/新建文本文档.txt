@@ -1,0 +1,3 @@
+model = ResNet(num_input_channels=1, num_output_channels=1, num_blocks=5,
+             num_channels=128, need_residual=True, act_fun='LeakyReLU',
+             need_sigmoid=False, norm_layer=nn.BatchNorm2d, pad='zero').type(dtype)

@@ -1,0 +1,7 @@
+model = skipXS(num_input_channels=1, num_output_channels=1,
+             num_channels_down=[32, 64, 128, 256, 256], filter_size_down=[3, 3, 3, 3, 3],
+             num_channels_up=[32, 64, 128, 256, 256], filter_size_up=[3, 3, 3, 3, 3],
+             num_channels_skip=[4, 4, 4, 4, 4], filter_skip_size=[1, 1, 1, 1, 1],
+             upsample_mode=['bilinear', 'bilinear', 'bilinear', 'bilinear', 'bilinear'],
+             downsample_mode=['stride', 'stride', 'stride', 'stride', 'stride'],
+             need_sigmoid=False, need_bias=True, pad='zero', act_fun="LeakyReLU", need_attention=True).type(dtype)

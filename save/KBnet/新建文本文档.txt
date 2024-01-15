@@ -1,0 +1,7 @@
+model_pretrain_230.pt  白边图片训练230epoch
+
+model_pretrain_244.pt  白边图片训练230epoch + 除边训练14epoch
+
+model_pretrain_290.pt  白边图片训练230epoch + 除边训练50epoch + SSIMloss训练10epoch
+
+model_pretrain_400aug.pt  白边图片训练230epoch + 除边训练50epoch + SSIMloss训练10epoch + 剪切数据增强
